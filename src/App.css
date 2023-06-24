@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.nav-bar{
+  position: absolute;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hero-section {
+   border: solid red;
+   max-width: 100%;
+   height: 100vh;
+   background-image: url('https://www.3sixteen.com/cdn/shop/files/stayinyalanes-11_1440x.jpg?v=1684989095');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   
+   
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+ 
+.hero-text{
+  border: solid red;
+  /* min-height: 100vh;
+  width: 100vw; */
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
+  padding-bottom: 2rem;
+  color: white; */
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: end;
+padding-bottom:5rem ;
+color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.card{
+  border: solid red;
+  width:70vw;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero2-section>div{
+  border: solid red;
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+}
+.hero2-section,img{
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero2-section{
+  padding-top: 4rem;
 }
