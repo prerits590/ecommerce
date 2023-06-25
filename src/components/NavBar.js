@@ -2,87 +2,44 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <header>
-      <div className="nav-bar">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-           </ul> */}
-              <div className="container-fluid">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-5 border border-primary">
-                      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                          <a
-                            className="nav-link active"
-                            aria-current="page"
-                            href="/"
-                          >
-                            Home
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Link
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Link
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Link
-                          </a>
-                        </li>
-                      </ul>
+    
+      <header id="full_nav">
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                    <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="logo"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                         {/* <span class="navbar-toggler-icon"></span>  */}
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="header_right">
+                            <div class="text-lg-end pt-3">
+                                <span>Call Us</span>
+                                <span class="phone_no">+91 6747432342</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-2 border border-primary text-center">
-                      <a className="navbar-brand" href="/">
-                        Navbar
-                      </a>
-                    </div>
-                    <div className="col-5 border border-primary col-auto">
-                      <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-                        <li className="nav-item">
-                          <a
-                            className="nav-link active"
-                            aria-current="page"
-                            href="/"
-                          >
-                            Home
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Link
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Link
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Link
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+                </nav>
             </div>
-          </div>
-        </nav>
-      </div>
+        </div>
     </header>
   );
 }

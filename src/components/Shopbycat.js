@@ -17,7 +17,7 @@ export default function Shopbycat() {
                 <div className="row text-center">
                   <div className="tabs border mt-3">
                     <div className="row justify-content-center">
-                      <div className="col-lg-4 col-md-12 border border-primary d-flex justify-content-center">
+                      <div className="col-lg-4 col-md-4 col-sm-12border border-primary d-flex justify-content-center">
                         <div className="card">
                           <img
                             src="	https://www.3sixteen.com/cdn/shop/files/Pic_52_of_96_900x.jpg?v=1680202393"
@@ -26,17 +26,21 @@ export default function Shopbycat() {
                           />
                           <div className="card-body">
                             <h5 className="card-title">Card title</h5>
-                            <p className="card-text">
-                              Some quick example text to build on the card title
-                              and make up the bulk of the card's content.
-                            </p>
-                            <a href="/" className="btn btn-primary">
-                              Go somewhere
-                            </a>
+                            <div className="btn-div2">
+                              <a
+                                href="/"
+                                className="main-btn btn shop-men px-5 mb-2"
+                              >
+                                <p className="text">SHOP MEN</p>
+                              </a>
+                              <a href="/" className="main-btn btn shop-women">
+                                <p className="text">SHOP WOMEN</p>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-4 col-md-12 border border-primary d-flex justify-content-center">
+                      <div className="col-lg-4 col-md-4 col-sm-12border border-primary d-flex justify-content-center">
                         <div className="card">
                           <img
                             src="	https://www.3sixteen.com/cdn/shop/files/Pic_52_of_96_900x.jpg?v=1680202393"
@@ -45,17 +49,21 @@ export default function Shopbycat() {
                           />
                           <div className="card-body">
                             <h5 className="card-title">Card title</h5>
-                            <p className="card-text">
-                              Some quick example text to build on the card title
-                              and make up the bulk of the card's content.
-                            </p>
-                            <a href="/" className="btn btn-primary">
-                              Go somewhere
-                            </a>
+                            <div className="btn-div2">
+                              <a
+                                href="/"
+                                className="main-btn btn shop-men px-5 mb-2"
+                              >
+                                <p className="text">SHOP MEN</p>
+                              </a>
+                              <a href="/" className="main-btn btn shop-women">
+                                <p className="text">SHOP WOMEN</p>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-4 col-md-12 border border-primary d-flex justify-content-center">
+                      <div className="col-lg-4 col-md-4 col-sm-12border border-primary d-flex justify-content-center">
                         <div className="card">
                           <img
                             src="	https://www.3sixteen.com/cdn/shop/files/Pic_52_of_96_900x.jpg?v=1680202393"
@@ -64,13 +72,17 @@ export default function Shopbycat() {
                           />
                           <div className="card-body">
                             <h5 className="card-title">Card title</h5>
-                            <p className="card-text">
-                              Some quick example text to build on the card title
-                              and make up the bulk of the card's content.
-                            </p>
-                            <a href="/" className="btn btn-primary">
-                              Go somewhere
-                            </a>
+                            <div className="btn-div2">
+                              <a
+                                href="/"
+                                className="main-btn btn shop-men px-5 mb-2"
+                              >
+                                <p className="text">SHOP MEN</p>
+                              </a>
+                              <a href="/" className="main-btn btn shop-women">
+                                <p className="text">SHOP WOMEN</p>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>

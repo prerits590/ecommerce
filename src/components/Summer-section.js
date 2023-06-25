@@ -10,9 +10,9 @@ const Summersection = ({ h1Tag ,pTag, btnText1, btntext2}) => {
             <h1>{h1Tag}</h1>
             <p> {pTag} </p>
             <div className="btn-div mt-4">
-              <button className="btn btn-primary mx-2">{btnText1}</button>
-              <button className="btn btn-primary mt-lg-0 ms-lg-4">
-                {btntext2}
+              <button className="btn main-btn2 mx-2 px-5"><p className="text">{btnText1}</p></button>
+              <button className="btn main-btn2 mt-lg-0 ms-lg-4">
+               <p className="text">{btntext2}</p> 
               </button>
             </div>
           </div>
@@ -23,3 +23,7 @@ const Summersection = ({ h1Tag ,pTag, btnText1, btntext2}) => {
 };
 
 export default Summersection;
+{/* <button className="btn main-btn"><p className="text">SHOP MEN</p></button>
+<button className="btn main-btn mt-lg-0 ms-lg-4">
+  <p className="text">SHOP WOMEN</p>
+</button> */}

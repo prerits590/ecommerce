@@ -1,22 +1,110 @@
-.nav-bar{
-  position: absolute;
-  width: 100vw;
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  /* margin-bottom: 3rem; */
+  /* color: var(--secondry-color); */
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  /* font-family: var(--secondry-font); */
+  /* color: var(--secondry-color); */
+  /* line-height: 3rem; */
+}
+h4 {
+  /* color: var(--secondry-color); */
+  /* font-family: var(--secondry-font); */
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  /* margin-bottom: 0.5rem; */
 }
 
+h5 {
+  /* color: var(--primary-color); */
+  text-transform: capitalize;
+  /* font-family: var(--secondry-font); */
+  font-size: 1rem;
+  font-weight: 700;
+  /* margin-bottom: 0.5rem; */
+}
+Р {
+  font-size: 0.7rem;
+  /* color: var(--text-color); */
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-btn {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 10px 35px;
+  gap: 15px;
+  background-color: #fdfdfd;
+  /* outline: 3px #ffffff solid; */
+  outline-offset: -3px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  --bs-btn-border-radius: none;
+}
+
+.main-btn .text {
+  color: #212a2f;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 400ms;
+}
+
+.main-btn:hover {
+  background-color: #212a2f;
+}
+
+.main-btn:hover .text {
+  color: #ffffff;
+}
+.main-btn,
+p {
+  margin: 0;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100vw;
+  border: solid red;
+  background-color: white;
+  z-index: 9999;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+}
 
 .hero-section {
-   border: solid red;
-   max-width: 100%;
-   height: 100vh;
-   background-image: url('https://www.3sixteen.com/cdn/shop/files/stayinyalanes-11_1440x.jpg?v=1684989095');
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   
-   
-  }
- 
-.hero-text{
+  border: solid red;
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("https://www.3sixteen.com/cdn/shop/files/stayinyalanes-11_1440x.jpg?v=1684989095");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text {
   border: solid red;
   /* min-height: 100vh;
   width: 100vw; */
@@ -25,33 +113,185 @@
   justify-content: end;
   padding-bottom: 2rem;
   color: white; */
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: end;
-padding-bottom:5rem ;
-color: white;
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 5rem;
+  color: white;
+  
 }
 
-
-.card{
+.card {
   border: solid red;
-  width:70vw;
-
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+.card > img {
+  border: solid green;
+  height: 84%;
+  transition: all 0.3s ease;
+  z-index: 0;
+  
+}
+.card-body {
+  border: solid blue;
+  overflow: hidden;
+  z-index: 1;
+  background-color: white;
+}
+.card .btn-div2 {
+  border: solid black;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  
+  
+}
+.card:hover img{
+  filter: brightness(60%);
+  transform: scale(1.1);
+}
+.card:hover .btn-div2{
+opacity: 1;
 }
 
-.hero2-section>div{
+
+
+
+.hero2-section > div {
   border: solid red;
   width: 100vw;
   height: 90vh;
   object-fit: cover;
 }
-.hero2-section,img{
+.hero2-section,
+img {
   max-height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.hero2-section{
+.hero2-section {
   padding-top: 4rem;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* ------carousel------ */
+.slider {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+.slider .item {
+  margin-right: 10px;
+}
+
+.slider .item:last-child {
+  margin-right: 0;
+}
+
+.ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ctrl-btn {
+  padding: 20px 20px;
+  min-width: 50px;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+  left: 0;
+}
+
+.ctrl-btn.pro-next {
+  right: 0;
+}
+
+.card2 {
+  border: solid red;
+  width: 20vw;
+  height: 50vh;
+}
+.card2 > img {
+  border: solid green;
+  height: 84%;
+}
+.card-body2 {
+  border: solid blue;
+}
+
+.main-btn2 {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 10px 35px;
+  gap: 15px;
+  background-color: #212a2f;
+  outline: 3px #212a2f solid;
+  outline-offset: -3px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  --bs-btn-border-radius: none;
+}
+
+.main-btn2 .text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 400ms;
+}
+
+.main-btn2:hover {
+  background-color: transparent;
+}
+
+.main-btn2:hover .text {
+  color: #212a2f;
+}
+.main-btn2,
+p {
+  margin: 0;
 }

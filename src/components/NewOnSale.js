@@ -6,7 +6,7 @@ export default function NewOnSale() {
         <div className="container px-0 py-5">
             <div className="row">
                 <div className="col">
-                    <h3>New On Sale</h3>
+                    <h2>New On Sale</h2>
                 </div>
             </div>
         </div>
